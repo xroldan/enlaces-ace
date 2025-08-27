@@ -1,19 +1,26 @@
-import subprocess
 import json
+from datetime import datetime
 
-# Ruta a tu archivo plano con los enlaces
 INPUT_FILE = "data/listaplana.txt"
-OUTPUT_FILE = "data/canales.json"  # dentro del repo
+OUTPUT_FILE = "data/canales.json"
+LOG_FILE = "log/actualizar.log"
 
-# Leer enlaces del archivo plano
-with open(INPUT_FILE, "r") as f:
-    enlaces = [line.strip() for line in f if line.strip()]
+def log(msg):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(LOG_FILE, "a") as f:
+        f.write(f"[{timestamp}] {msg}\n")
 
-# Guardar en formato JSON
-with open(OUTPUT_FILE, "w") as f:
-    json.dump(enlaces, f, indent=2)
+try:
+    # Leer enlaces
+    with open(INPUT_FILE, "r") as f:
+        enlaces = [line.strip() for line in f if line.strip()]
+    num_lineas = len(enlaces)
 
-# Subir a GitHub
-subprocess.run(["git", "add", OUTPUT_FILE])
-subprocess.run(["git", "commit", "-m", "Actualización automática de enlaces"])
-subprocess.run(["git", "push"])
+    # Guardar JSON
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(enlaces, f, indent=2)
+
+    log(f"Leídas {num_lineas} líneas de {INPUT_FILE}. Actualización completada.")
+
+except Exception as e:
+    log(f"Error durante la actualización: {e}")

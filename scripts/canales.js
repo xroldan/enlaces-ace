@@ -26,8 +26,8 @@ let currentHash = null;
     function copiarHash(i) {
       const hash = document.getElementById(`hash-${i}`).textContent;
       navigator.clipboard.writeText(hash)
-        .then(() => alert('Hash copiado!'))
-        .catch(err => alert('Error copiando hash'));
+        .then(() => alert('Enlace copiado!'))
+        .catch(err => alert('Error copiando enlace'));
     }
 
     function abrirPopup(hash) {
