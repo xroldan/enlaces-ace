@@ -25,9 +25,45 @@ let currentHash = null;
 
     function copiarHash(i) {
       const hash = document.getElementById(`hash-${i}`).textContent;
-      navigator.clipboard.writeText(hash)
-        .then(() => mostrarToast('Enlace copiado!', 'success'))
-        .catch(err => mostrarToast('Error copiando enlace', 'error'));
+      
+      // Método 1: Usar navigator.clipboard (más moderno, sin popups)
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(hash)
+          .then(() => mostrarToast('Enlace copiado!', 'success'))
+          .catch(err => {
+            // Si falla, usar método alternativo
+            copiarTextoFallback(hash);
+          });
+      } else {
+        // Método 2: Fallback para navegadores más antiguos
+        copiarTextoFallback(hash);
+      }
+    }
+
+    function copiarTextoFallback(texto) {
+      try {
+        // Crear un elemento temporal
+        const textArea = document.createElement('textarea');
+        textArea.value = texto;
+        textArea.style.position = 'fixed';
+        textArea.style.left = '-999999px';
+        textArea.style.top = '-999999px';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        // Intentar copiar
+        const exitoso = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        
+        if (exitoso) {
+          mostrarToast('Enlace copiado!', 'success');
+        } else {
+          mostrarToast('Error copiando enlace', 'error');
+        }
+      } catch (err) {
+        mostrarToast('Error copiando enlace', 'error');
+      }
     }
 
     function mostrarToast(mensaje, tipo = 'success') {
@@ -38,13 +74,17 @@ let currentHash = null;
       
       toastContainer.appendChild(toast);
       
-      // Mostrar el toast
+      // Mostrar el toast con animación
       setTimeout(() => toast.classList.add('show'), 100);
       
       // Ocultar y eliminar después de 3 segundos
       setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 300);
+        toast.classList.add('hide');
+        setTimeout(() => {
+          if (toast.parentNode) {
+            toast.remove();
+          }
+        }, 300);
       }, 3000);
     }
 
@@ -68,7 +108,20 @@ let currentHash = null;
     });
 
     document.getElementById('btn-vlc').addEventListener('click', () => {
-      if(currentHash) window.location.href = `vlc://http//127.0.0.1:6878/ace/manifest.m3u8?id=${currentHash}`;
+      if(currentHash) {
+        const streamUrl = `http://127.0.0.1:6878/ace/manifest.m3u8?id=${currentHash}`;
+        
+        // Usar el mismo sistema robusto de copia
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(streamUrl)
+            .then(() => mostrarToast('URL del stream copiada! Pégala en VLC', 'success'))
+            .catch(err => {
+              copiarTextoFallback(streamUrl);
+            });
+        } else {
+          copiarTextoFallback(streamUrl);
+        }
+      }
     });
 
     const buscador = document.getElementById('buscador');
