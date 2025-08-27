@@ -2,10 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página</title>
+  <title>Lista de Canales</title>
 </head>
 <body>
-  <h1>Hola</h1>
-  <p>Bienvenido a mi página de GitHub Pages.</p>
+  <h1>Lista de Canales</h1>
+  <ul id="canales-list"></ul>
+
+  <script>
+    // Carga el JSON
+    fetch('data/canales.json')
+      .then(response => response.json())
+      .then(data => {
+        const list = document.getElementById('canales-list');
+        data.forEach(canal => {
+          const li = document.createElement('li');
+          li.textContent = `${canal.nombre}: ${canal.id}`;
+          list.appendChild(li);
+        });
+      })
+      .catch(error => console.error('Error cargando canales:', error));
+  </script>
 </body>
 </html>
