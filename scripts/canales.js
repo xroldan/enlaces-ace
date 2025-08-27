@@ -26,8 +26,26 @@ let currentHash = null;
     function copiarHash(i) {
       const hash = document.getElementById(`hash-${i}`).textContent;
       navigator.clipboard.writeText(hash)
-        .then(() => alert('Enlace copiado!'))
-        .catch(err => alert('Error copiando enlace'));
+        .then(() => mostrarToast('Enlace copiado!', 'success'))
+        .catch(err => mostrarToast('Error copiando enlace', 'error'));
+    }
+
+    function mostrarToast(mensaje, tipo = 'success') {
+      const toastContainer = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast ${tipo}`;
+      toast.textContent = mensaje;
+      
+      toastContainer.appendChild(toast);
+      
+      // Mostrar el toast
+      setTimeout(() => toast.classList.add('show'), 100);
+      
+      // Ocultar y eliminar después de 3 segundos
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
     }
 
     function abrirPopup(hash) {
