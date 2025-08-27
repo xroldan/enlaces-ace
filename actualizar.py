@@ -2,7 +2,7 @@ import subprocess
 import json
 
 # Ruta a tu archivo plano con los enlaces
-INPUT_FILE = "listaplana.txt"
+INPUT_FILE = "data/listaplana.txt"
 OUTPUT_FILE = "data/canales.json"  # dentro del repo
 
 # Leer enlaces del archivo plano
