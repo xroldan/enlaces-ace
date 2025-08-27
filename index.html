@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de Canales</title>
+  <link rel="stylesheet" href="styles/canales.css">
+
 </head>
 <body>
   <h1>Lista de Canales</h1>
-  <ul id="canales-list"></ul>
 
-  <script>
-    // Carga el JSON
-    fetch('data/canales.json')
-      .then(response => response.json())
-      .then(data => {
-        const list = document.getElementById('canales-list');
-        data.forEach(canal => {
-          const li = document.createElement('li');
-          li.textContent = `${canal.nombre}: ${canal.id}`;
-          list.appendChild(li);
-        });
-      })
-      .catch(error => console.error('Error cargando canales:', error));
-  </script>
+  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
+    <input type="text" id="buscador" placeholder="Buscar canal...">
+    <a href="https://www.futbolenlatv.es/" target="_blank" class="boton">Guia eventos</a>
+  </div>
+  
+  <ul id="canales-list"></ul>
+  
+
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <p>Reproducir con:</p>
+    <button class="boton" id="btn-acestream">AceStream</button>
+    <button class="boton" id="btn-vlc">VLC</button>
+    <br><br>
+    <button class="boton" id="btn-cerrar">Cerrar</button>
+  </div>
+
+  <script src="scripts/canales.js"></script>
+
+  
 </body>
 </html>
