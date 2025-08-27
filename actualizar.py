@@ -1,9 +1,10 @@
 import json
 from datetime import datetime
 
-INPUT_FILE = "data/listaplana.txt"
-OUTPUT_FILE = "data/canales.json"
-LOG_FILE = "log/actualizar.log"
+INPUT_FILE = "/home/compartir/lista_zeronet/enlaces-ace/data/listaplana.txt"
+OUTPUT_FILE = "/home/compartir/lista_zeronet/enlaces-ace/data/canales.json"
+LOG_FILE = "/home/compartir/lista_zeronet/enlaces-ace/logs/actualizar.log"
+
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
