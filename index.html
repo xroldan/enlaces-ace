@@ -2,38 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#007bff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AceStream TV">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Lista de canales de TV para reproducir con AceStream">
+  <meta name="keywords" content="acestream, canales, tv, streaming">
+  <meta name="author" content="AceStream TV">
+  
   <title>Enlaces AceStream - Canales de TV</title>
+  
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles/canales.css">
-
 </head>
 <body>
-  <div style="display: flex; justify-content: flex-end; margin: 10px 0;">
-    <a href="faq.html" class="boton">FAQs</a>
+  <div class="header">
+    <a href="faq.html" class="boton boton-faq">FAQs</a>
   </div>
-  <h1>Lista de Canales</h1>
+  
+  <div class="container">
+    <h1>Lista de Canalesss</h1>
 
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
-    <input type="text" id="buscador" placeholder="Buscar canal...">
-    <a href="https://www.futbolenlatv.es/" target="_blank" class="boton">Guia eventos</a>
+    <div class="search-container">
+      <input type="text" id="buscador" placeholder="Buscar canal...">
+      <a href="https://www.futbolenlatv.es/" target="_blank" class="boton boton-guia">Guia eventos</a>
+    </div>
+    
+    <ul id="canales-list"></ul>
   </div>
-  
-  <ul id="canales-list"></ul>
-  
 
   <div class="overlay" id="overlay"></div>
   <div class="popup" id="popup">
     <p>Reproducir con:</p>
-    <button class="boton" id="btn-acestream">AceStream</button>
-    <button class="boton" id="btn-vlc">VLC</button>
-    <br><br>
-    <button class="boton" id="btn-cerrar">Cerrar</button>
+    <div class="popup-buttons">
+      <button class="boton boton-acestream" id="btn-acestream">AceStream</button>
+      <button class="boton boton-vlc" id="btn-vlc">VLC</button>
+    </div>
+    <button class="boton boton-cerrar" id="btn-cerrar">Cerrar</button>
   </div>
 
   <script src="scripts/canales.js"></script>
 
   <!-- Contenedor para mensajes de notificación -->
   <div id="toast-container"></div>
-  
 </body>
 </html>
