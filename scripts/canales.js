@@ -149,8 +149,4 @@ function copiarListaM3U() {
     copiarTextoFallback(m3uUrl);
   }
 
-  // También abrir/descargar el archivo después de un pequeño delay
-  setTimeout(() => {
-    window.location.href = m3uUrl;
-  }, 500);
 }
