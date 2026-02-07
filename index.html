@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="styles/canales.css">
 
 </head>
+
 <body>
   <div style="display: flex; justify-content: flex-end; margin: 10px 0;">
     <a href="faq.html" class="boton">FAQs</a>
@@ -16,12 +18,12 @@
 
   <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 30px;">
     <input type="text" id="buscador" placeholder="Buscar canal...">
-    <a href="data/local.m3u" class="boton">Abrir lista de eventos</a>
+    <button class="boton" onclick="copiarListaM3U()">Abrir lista de eventos</button>
     <a href="https://www.futbolenlatv.es/" target="_blank" class="boton">Guia eventos</a>
   </div>
-  
+
   <ul id="canales-list"></ul>
-  
+
 
   <div class="overlay" id="overlay"></div>
   <div class="popup" id="popup">
@@ -36,6 +38,7 @@
 
   <!-- Contenedor para mensajes de notificación -->
   <div id="toast-container"></div>
-  
+
 </body>
+
 </html>
