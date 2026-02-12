@@ -9,7 +9,7 @@ if [ -f "/home/compartir/local.m3u" ]; then
     cp /home/compartir/local.m3u data/local.m3u
 fi
 
-# Ejecutar el script de actualización
+# Ejecutar el script de actualización!
 /usr/bin/python3 actualizar.py
 
 # Verificar si hay cambios en el archivo de canales o en la lista de eventos
