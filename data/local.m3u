@@ -1,46 +1,26 @@
 #EXTM3U
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=107c3ce5a5d2527c9f06e4eab87477201791f231
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc98_vis79-fanart.png", Real Oviedo vs Athletic Club
 http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc87_vis83-fanart.png", Rayo Vallecano vs Atlético Madrid
-http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc87_vis83-fanart.png", Rayo Vallecano vs Atlético Madrid
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc87_vis83-fanart.png", Rayo Vallecano vs Atlético Madrid
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc87_vis83-fanart.png", Rayo Vallecano vs Atlético Madrid
+http://127.0.0.1:6878/ace/getstream?id=1bb5bf76fb2018d6db9aaa29b1467ecdfabe2884
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc87_vis83-fanart.png", Rayo Vallecano vs Atlético Madrid
 http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=107c3ce5a5d2527c9f06e4eab87477201791f231
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc97_vis93-fanart.png", Levante UD vs Valencia
 http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc94_vis84-fanart.png", Mallorca vs Real Betis
-http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
-#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc94_vis84-fanart.png", Mallorca vs Real Betis
 http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc94_vis84-fanart.png", Mallorca vs Real Betis
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
+http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc94_vis84-fanart.png", Mallorca vs Real Betis
+http://127.0.0.1:6878/ace/getstream?id=1bb5bf76fb2018d6db9aaa29b1467ecdfabe2884
 #EXTINF:0 group-title="Eventos de Hoy" tvg-logo="http://192.168.1.214:880/media/images/miniaturas/comp6_loc94_vis84-fanart.png", Mallorca vs Real Betis
 http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
 #EXTINF:0 group-title="Copa del Rey" tvg-logo="", Copa 1080 plus
@@ -52,11 +32,11 @@ http://127.0.0.1:6878/ace/getstream?id=28205d7c9776b96a1f479c9082e80bd1e18f5afd
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga
 http://127.0.0.1:6878/ace/getstream?id=eb4975702ceadca7ed74f8707e17a9f55569dbb9
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga
-http://127.0.0.1:6878/ace/getstream?id=0e50439e68aa2435b38f0563bb2f2e98f32ff4b1
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga
-http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
+http://127.0.0.1:6878/ace/getstream?id=1bb5bf76fb2018d6db9aaa29b1467ecdfabe2884
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga
 http://127.0.0.1:6878/ace/getstream?id=cc108ae39f92c48f6c946763047bd1c9b7b7d889
+#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga
+http://127.0.0.1:6878/ace/getstream?id=dda5d2cace9bc4cb0918e62bc50d657d4a10496a
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga 2
 http://127.0.0.1:6878/ace/getstream?id=635b61c1f240449163260cd914d10d886a54fee3
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/DAZNLI.png", DAZN LaLiga 2
@@ -72,17 +52,7 @@ http://127.0.0.1:6878/ace/getstream?id=8c71f0e0a5476e10950fc827f9d2a507340aba74
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
 http://127.0.0.1:6878/ace/getstream?id=3ace1463a7cad979c3a4002b245487e9982e9f1a
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=f863873de9f7b2996dde19a0657dd89835af3007
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=c9321006921967d6258df6945f1d598a5c0cbf1e
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=107c3ce5a5d2527c9f06e4eab87477201791f231
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=af458073c3096293a4dea9f369d4f308e7125bd6
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=0febfb5cac3384f487d55c559bbfc877db2d0357
-#EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIGA.png", M. LaLiga TV
-http://127.0.0.1:6878/ace/getstream?id=00c9bc9c5d7d87680a5a6bed349edfa775a89947
+http://127.0.0.1:6878/ace/getstream?id=31c19ffb3472c289c5bbbbc174449c8ed0d19e38
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIG1.png", M. LaLiga 2
 http://127.0.0.1:6878/ace/getstream?id=b8eb9c9868d487402569bba2d97a8af113d033fe
 #EXTINF:0 group-title="LaLiga" tvg-logo="https://www.movistarplus.es/recorte/m-NEO/canal/MLIG2.png", M. LaLiga 3
